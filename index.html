@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>W3.CSS Template</title>
+    <title>Doxometry writings</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -20,45 +21,38 @@
 </head>
 
 <body>
-
     <!-- Navbar -->
-    <div class="w3-top">
+    <div class="w3-top" id="navbar">
         <div class="w3-bar w3-black w3-card">
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
                 href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
                     class="fa fa-bars"></i></a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-            <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-            <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
             <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-            <a href="/Book of Gnon.md" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Main book</a>
-            <a href="/short-version.md" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Short version</a>
+            <a href="/Book of Gnon.md" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Book of Gnon -
+                60'000
+                words</a>
+            <a href="/short-version.md" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Book of Gnon
+                extract -
+                1800 words</a>
+            <p>Akashic Dharma - TBA</p>
             <div class="w3-dropdown-hover w3-hide-small">
                 <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-                    <a href="#" class="w3-bar-item w3-button">Extras</a>
-                    <a href="#" class="w3-bar-item w3-button">Media</a>
+                    <a href="https://twitter.com/doxometrist" class="w3-bar-item w3-button">Twitter</a>
+                    <a href="https://doxometrist.substack.com/" class="w3-bar-item w3-button">Main blog @ Substack </a>
                 </div>
             </div>
-            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
-                    class="fa fa-search"></i></a>
         </div>
     </div>
-
     <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-        <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
     </div>
-
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
-
         <!-- Automatic Slideshow Images -->
-        <div class="mySlides w3-display-container w3-center">
+        <!-- <div class="mySlides w3-display-container w3-center">
             <img src="/w3images/la.jpg" style="width:100%">
             <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
                 <h3>Los Angeles</h3>
@@ -78,162 +72,227 @@
                 <h3>Chicago</h3>
                 <p><b>Thank you, Chicago - A night we won't forget.</b></p>
             </div>
-        </div>
+        </div> -->
 
-        <!-- The Band Section -->
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-            <h2 class="w3-wide">THE BAND</h2>
-            <p class="w3-opacity"><i>We love music</i></p>
-            <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="w3-row w3-padding-32">
-                <div class="w3-third">
-                    <p>Name</p>
-                    <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name"
-                        style="width:60%">
-                </div>
-                <div class="w3-third">
-                    <p>Name</p>
-                    <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name"
-                        style="width:60%">
-                </div>
-                <div class="w3-third">
-                    <p>Name</p>
-                    <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-                </div>
+            <h2 class="w3-wide">MEET ALICE FROM ANDROMEDA</h2>
+            <a href="https://www.google.com/search?q=astral+girl&sxsrf=ALiCzsZaYAjivfZJsvmVGpp-lU5ZRlMHTA:1653336305330&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjErbHZtfb3AhXSa8AKHXDbAM0Q_AUoAXoECAIQAw&biw=697&bih=661&dpr=1.38#imgrc=DgjvZXlAX9XG-M"
+                class="w3-bar-item w3-opacity w3-button"><u>Imagine a <i>Girl-from-space</i></u></a>
+            <p class="w3-justify">
+                She appears in 2022 as an adult with no <i>skin in the game</i> of this Universe. She passes
+                for a
+                human and her plan is to experience a few decades here living amongus, then skip universes. Some say
+                she is
+                an interdimensional jumper from Kardashev type 5 civilization, some say that an Inspector from
+                simulation level above.
+                </br>
+                </br>
+                She's the unconditioned - she is Nirvana. She's free to all possiblity. That infinite potential
+                seems to be her ultimate form, but to experience this universe, she accepted some features of the
+                human form - tradeoff she temporarily makes in all universes.
+                </br>
+                </br>
+                Freshly incarnated in our world, she's
+                more blank slated than an AGI. She doesn't have a debt to creators, innate *otherness*, nor do
+                hidden biases lurk in her assumptions. All traditionalist cries to honor ancestors are alien to
+                her. All cries about undeserved priviledge too.
+                </br>
+                </br>
+                She's free from ascriptive characteristics. She's
+                bland, but has lots of possiblity. She knows that by the virtue of here existing, inhabiting this mortal
+                plane, her environment will mould her. She
+                starts out as a rootless cosmpolitan, but can't stay that way if she wants to experience this
+                universe in a meaningful way.
+            </p>
+        </div>
+        <div class="w3-container w3-black w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+            <h2 class="w3-wide">Assumptions</h2>
+            <p class="w3-opacity"><i>The necessary mindset for this <i>trip</i> </i></p>
+            <p class="w3-justify">
+                We need to make a couple of assumptions to make this exercise work.
+            <ol>
+                <li>
+                    Talking about beliefs is a meaningful activity
+                </li>
+                <li>
+                    We need to suspend the question <a href="https://plato.stanford.edu/entries/belief/#ElimInst">if
+                        <u>beliefs</u> exist</a>.
+                </li>
+                <li>
+                    We take ‘belief’ as a thing that people list when asked about their beliefs. These include
+                    religious,
+                    scientific, political, mathematical statements. Both descriptive and normative (if we may say so!,
+                    use
+                    this
+                    distinction).
+                </li>
+            </ol>
+            There is no need for a <a href="https://plato.stanford.edu/entries/descartes-epistemology/">Descartes -
+                deep examination</a> of beliefs about nature of
+            reality. For now. Let’s just think politics.
+            That is the perspective of you and me, at the moment of writing, <u>homo sapiens</u> living in the beginning
+            of the
+            21st century. But more entities share the concerns here.
+            In this journey with Alice has already lost some of the unconditioned purity. There are <u>common sense</u>
+            intuitions that early
+            21st
+            cenutry humans do, even if they don't extend to terribly many conditions.
+            </p>
+        </div>
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+            <h2 class="w3-wide">Who Alice Isn't</h2>
+            <p class="w3-opacity"><i>Meet Bob</i></p>
+            <p class="w3-justify">
+                Let's construct another character, Bob. Bob is an a epistemologically committed person. He resonates
+                with the
+                following speech, accepts it as description of his ideological enemies:
+            <blockquote>
+                Think of someone who has clearly WRONG political beliefs. They don’t see the obvious symptoms where are
+                we going as a society. They don’t understand things. Don’t see problems. See everything through the
+                lenses of what is preached to them. They are malevolent. They are ignorant yet spread bolding their
+                rabid influence. Remember the time you were shocked by their words. Remember when they used violence
+                against people like you. Anyone with their beliefs is a potential threat - at least (or maybe,
+                especially), when they vote. They have their own subculture. Echo-chambers on the internet. They clearly
+                misuse their liberties. Not all are violent, but those non-violent condone violent actions. They have
+                their idols, books.
+            </blockquote>
+            On the other hand, Alice being born <i>tabula rasa</i> is a political nihilist and a <a
+                href="https://plato.stanford.edu/entries/relativism/">relativist</a>.
+            Alice doesn't have <a href="https://en.wikiquote.org/wiki/God_is_dead">gods</a> nor <a
+                href="https://en.wikipedia.org/wiki/K%C5%8Dan#Killing_the_Buddha">anyone to guide
+                her</a>. She shares the <a href="https://plato.stanford.edu/entries/postmodernism">
+                disbelief in metanarratives
+            </a>
+            of the milieu she arrives in. Now
+            politics is
+            part of the human experience here. Insofar as she wants to partake in it, she's facing the problem of
+            choosing a
+            side in a belief war.
+            To understand this book, you need to understand Alice's mindset at the start of her journey.
+            </p>
+        </div>
+        <div class="w3-container w3-content w3-black w3-center w3-padding-64" style="max-width:800px" id="band">
+            <h2 class="w3-wide">Transition To Action</h2>
+            <!-- <p class="w3-opacity"><i>empty</i></p> -->
+            <p class="w3-justify">
+                It's essentially <i> ataraxia </i> , but a bit softer
+                <i>Nur Leben</i> - There is a condition, a state of mind, present in some people that is admirable.
+                NPC appear to have it by default. Non-NPC have stormy interiors by default, but can transcend them
+                reaching externally visible tranquility.
+                characteristics of ‘just living’
+                having cleared all internal conflict about how to live one’s life; determined one’s values
+                it does not necessarily mean
+                but it is not intended to perpetually reassess its goals!!! wait, that’s eudaimonia, ataraxia
+                that is already touched upon a bit in the Llch manifesto,
+                but there it’s more general, for the society and not gradual building of beliefs. might just develop
+                here from
+                like Descartes did
+                would all be like that? skeptical ideal of ataraxia? The receipt: accelerating the dialectical exchange,
+                making
+                it truly superset, through fast exchange based on Lully. Achieving ideal through rejecting it. and
+                escaping the
+                lotus eating trap
+                looking for something just acceptable enough for everyone
+            </p>
+        </div>
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+            <h2 class="w3-wide">Two Options</h2>
+            <!-- <p class="w3-opacity"><i>empty</i></p> -->
+            <p class="w3-justify">
+                Pick some metanarrative, some Lebensformen and become good at it. You will benefit them greatly if
+                you
+                perform
+                it dutifully. To some extent it is a leap of faith, as it is only locally sanctioned by the Outside.
+                <br />
+                <br />
+                Throw away the ladder and focus on the object level. Rely on the Outside, seek the real beyond the
+                layers of
+                metanarratives, accept no metanarrative as final truth.
+                See how deep the rabbit hole goes
+                <br />
+                <br />
+                Now are these conclusions different?
+                they differ by degree. Choice between them is itself a leap of faith. They are basically exploration
+                vs
+                exploitation.
+            </p>
+        </div>
+        <div class="w3-container w3-content w3-black w3-center w3-padding-64" style="max-width:800px" id="band">
+            <h2 class="w3-wide">What is <i>Book of Gnon</i>?</h2>
+            <p class="w3-justify">
+                It's a guide for Alice. How the cosmpolitan, undifferentiated, can <i>become</i> particular, limited, in
+                a conscious way.
+                </br>
+                </br>
+                <a href="#navbar" class="w3-bar-item w3-button w3-padding-large w3-hide-small">At the top</a>
+                you'll find both the long and short versions of the text. They are unoptimized, structure will change.
+                There might be some additions, too.
+                </br>
+                The key notions will remain the same.
+                The short version should take a couple of minutes, if that raises your interest go to the long one -
+                that should take about 4 hours to read.
+                </br>
+                Feel free to skip the sometimes lengthy quotes. They add to the experience, ground this work in some
+                traditions of thought, yet are not necessary for the comprehension.
+            </p>
+        </div>
+        <!-- <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+            <h2 class="w3-wide">empty</h2>
+            <p class="w3-opacity"><i>empty</i></p>
+            <p class="w3-justify">
+            </p>
+        </div> -->
+        <div class="w3-black" id="tour">
+            <div class="w3-container w3-content w3-padding-32" style="max-width:800px">
+                <!-- <h2 class="w3-wide w3-center">2 possible conclusions</h2> -->
             </div>
         </div>
-
-        <!-- The Tour Section -->
+        <!-- The Promise Section -->
         <div class="w3-black" id="tour">
             <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-                <h2 class="w3-wide w3-center">TOUR DATES</h2>
-                <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-                <ul class="w3-ul w3-border w3-white w3-text-grey">
-                    <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-                    <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-                    <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-                </ul>
-
-                <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-                    <div class="w3-third w3-margin-bottom">
-                        <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-                        <div class="w3-container w3-white">
-                            <p><b>New York</b></p>
-                            <p class="w3-opacity">Fri 27 Nov 2016</p>
-                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="w3-button w3-black w3-margin-bottom"
-                                onclick="document.getElementById('ticketModal').style.display='block'">Buy
-                                Tickets</button>
-                        </div>
-                    </div>
-                    <div class="w3-third w3-margin-bottom">
-                        <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-                        <div class="w3-container w3-white">
-                            <p><b>Paris</b></p>
-                            <p class="w3-opacity">Sat 28 Nov 2016</p>
-                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="w3-button w3-black w3-margin-bottom"
-                                onclick="document.getElementById('ticketModal').style.display='block'">Buy
-                                Tickets</button>
-                        </div>
-                    </div>
-                    <div class="w3-third w3-margin-bottom">
-                        <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%"
-                            class="w3-hover-opacity">
-                        <div class="w3-container w3-white">
-                            <p><b>San Francisco</b></p>
-                            <p class="w3-opacity">Sun 29 Nov 2016</p>
-                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="w3-button w3-black w3-margin-bottom"
-                                onclick="document.getElementById('ticketModal').style.display='block'">Buy
-                                Tickets</button>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="w3-wide w3-center">THERE WILL BE MORE</h2>
+                <!-- <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br> -->
+                <p><cite>Bonds Of Chaos</cite> by Xenosystems</p>
+                <blockquote cite=" https://www.apostategallery.com/XENOSYSTEMS_FRAGMENTS.pdf">
+                    NRx is still a cultural infant, far younger than the Millennium, even under the most
+                    mythically-creative extension of its genesis, and the cognitive ferment it catalyzes remains
+                    extraordinary. It has still scarcely begun. The ties of a consistent name are the very least
+                    that are required to concentrate it. NRx, whatever it turns out to be, needs lashing
+                    together,
+                    because explosions tend to fly apart — and it is unmistakably an explosion
+                </blockquote>
+                </br>
+                </br>
+                There will be more texts, part 2 will be <b>Akashic Dharma</b> - the particular solution to the
+                <i>equations</i>
+                found in Book of Gnon, for humanity of the next five centuries.
             </div>
         </div>
-
-        <!-- Ticket Modal -->
-        <div id="ticketModal" class="w3-modal">
-            <div class="w3-modal-content w3-animate-top w3-card-4">
-                <header class="w3-container w3-teal w3-center w3-padding-32">
-                    <span onclick="document.getElementById('ticketModal').style.display='none'"
-                        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-                </header>
-                <div class="w3-container">
-                    <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-                    <input class="w3-input w3-border" type="text" placeholder="How many?">
-                    <p><label><i class="fa fa-user"></i> Send To</label></p>
-                    <input class="w3-input w3-border" type="text" placeholder="Enter email">
-                    <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i
-                            class="fa fa-check"></i></button>
-                    <button class="w3-button w3-red w3-section"
-                        onclick="document.getElementById('ticketModal').style.display='none'">Close <i
-                            class="fa fa-remove"></i></button>
-                    <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-                </div>
-            </div>
-        </div>
-
-        <!-- The Contact Section -->
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-            <h2 class="w3-wide w3-center">CONTACT</h2>
-            <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-            <div class="w3-row w3-padding-32">
-                <div class="w3-col m6 w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-                    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-                    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-                </div>
-                <div class="w3-col m6">
-                    <form action="/action_page.php" target="_blank">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                            </div>
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                            </div>
-                        </div>
-                        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                        <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- End Page Content -->
     </div>
-
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i> London <br>
+                <i class="fa fa-twitter" style="width:30px"></i> Twitter: @doxometrist<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: doxometrist@protonmail.com<br>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Content -->
+    </div>
     <!-- Image of location/map -->
     <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
         <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
         </p>
     </footer>
-
     <script>
         // Automatic Slideshow - change image every 4 seconds
         var myIndex = 0;
         carousel();
-
         function carousel() {
             var i;
             var x = document.getElementsByClassName("mySlides");
@@ -245,7 +304,6 @@
             x[myIndex - 1].style.display = "block";
             setTimeout(carousel, 4000);
         }
-
         // Used to toggle the menu on small screens when clicking on the menu button
         function myFunction() {
             var x = document.getElementById("navDemo");
@@ -255,7 +313,6 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
-
         // When the user clicks anywhere outside of the modal, close it
         var modal = document.getElementById('ticketModal');
         window.onclick = function (event) {
@@ -264,7 +321,6 @@
             }
         }
     </script>
-
 </body>
 
 </html>
